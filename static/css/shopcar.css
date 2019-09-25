@@ -1,0 +1,193 @@
+.shopCar {
+	/* height: 1.226rem; */
+	background: #141d27;
+	bottom: 0;
+	position: fixed;
+	left: 0;
+	z-index: 50;
+	width: 100%;
+	font-size: 0;
+}
+
+.carContent {
+	display: flex;
+}
+
+.contLeft {
+	flex: 1;
+}
+
+.logo_wrapper {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	top: -0.3rem;
+	margin: 0 0.32rem;
+	padding: 0.16rem;
+	width: 1.333rem;
+	height: 1.333rem;
+	box-sizing: border-box;
+	border-radius: 50%;
+	background: #141d27;
+}
+
+.car_logo {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: #2b343c;
+	text-align: center;
+}
+
+.car_logo .iconfont.iconhtmal5icon29 {
+	font-size: 0.64rem;
+	color: #80858a;
+	line-height: 1.233rem;
+}
+
+.car_count {
+	width: 0.64rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	position: absolute;
+	background: #f01914;
+	border-radius: 0.4rem;
+	top: 0;
+	right: 0;
+	color: #FFFFFF;
+	font-size: 0.213rem;
+	text-align: center;
+}
+
+.car_logo.carHasProd {
+	background: #00a0dc;
+}
+
+.iconfont.iconhtmal5icon29.carHasProd {
+	color: #FFFFFF;
+}
+
+.car_price {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0.32rem;
+	line-height: 0.64rem;
+	font-size: 0.426rem;
+	color: rgba(255, 255, 255, 0.4);
+	font-weight: bold;
+	padding-right: 0.32rem;
+	border-right: 0.013rem solid rgba(255, 255, 255, 0.1);
+}
+
+.car_price.carHasProd {
+	color: #FFFFFF;
+}
+
+.car_description {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0.32rem;
+	line-height: 0.64rem;
+	font-size: 0.32rem;
+	color: rgba(255, 255, 255, 0.4);
+	padding-left: 0.32rem;
+}
+
+.contRight {
+	width: 2.8rem;
+	background: #2b343b;
+	font-size: 0.32rem;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.4);
+	line-height: 0.32rem;
+	padding-top: 0.533rem;
+	text-align: center;
+}
+
+.settleAccount {
+	color: #FFFFFF;
+	font-weight: bold;
+	background: #00b43c;
+}
+
+.ball {
+	position: absolute;
+	/* left: 0.853rem;
+	bottom: 0.586rem; */
+	width: 0.426rem;
+	height: 0.426rem;
+	z-index: 200;
+	background: #0074D9;
+	/* transition: all .4s ease; */
+}
+.inner{
+	width: 0.426rem;
+	height: 0.426rem;
+	border-radius: 50%;
+	background: #00a0dc;
+	/* transition: all .4s linear; */
+}
+.ballContainer{
+	
+}
+
+
+
+.carContainer{
+	
+}
+.car_popUp{
+	position: absolute;
+	left: 0;
+	bottom: 1.4rem;
+	width: 100%;
+	z-index: -1;
+}
+.car_head {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 1.066rem;
+	line-height: 1.066rem;
+	background: #F3F5F7;
+	border-bottom: 0.013rem solid rgba(7,17,27,0.1);
+}
+.headTitle {
+	font-size: 0.373rem;
+	padding-left: 0.48rem;
+}
+.headEmpty {
+	font-size: 0.32rem;
+	padding-right: 0.48rem;
+	color: rgb(0,160,220);
+}
+.car_content{
+	max-height: 5.786rem;
+	background: #FFFFFF;
+	padding: 0 0.48rem;
+	overflow: hidden;
+}
+.food{
+	position: relative;
+	display: flex;
+	height: 1.28rem;
+	line-height: 1.28rem;
+	box-sizing: border-box;
+	border-bottom: 0.013rem solid rgba(7,17,27,0.1);
+}
+.shopName{
+	font-size: 0.373rem;
+	flex: 1;
+}
+.shopPrice{
+	padding-right: 0.32rem;
+	font-weight: bold;
+}
+.fold-enter-active{
+	transition: all 0.4s;
+    transform: translateY(-100%);
+}
+.fold-leave-active{
+    display: none;
+}
+

@@ -1,0 +1,365 @@
+#app .tab{
+	display: flex;
+	width: 100%;
+	height: 1.066rem;
+	line-height: 1.066rem;
+	background: #FFFFFF;
+}
+.tab-item{
+	font-size: 0.373rem;
+	flex: 1;
+	text-align: center;
+}
+.tab-item a{
+	color: #4e555b;
+}
+.tab-item .active{
+	color: #f01414;
+}
+
+.header{
+	background: rgba(7,17,27,0.5);
+	color: #FFFFFF;
+	font-size: 0;
+	position: relative;
+}
+.head_content{
+	display: flex;
+	padding-top: 0.64rem;
+}
+.shopInfo{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	position: relative;
+}
+.shopLogo img{
+	width: 1.706rem;
+	height: 1.706rem;
+	margin: 0 0.426rem 0.48rem 0.64rem;
+	border-radius: 0.053rem;
+}
+.info_title span{
+	font-size: 0.426rem;
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: middle;
+}
+.brand{
+	margin-right: 0.16rem;
+	width: 0.8rem;
+	height: 0.48rem;
+}
+.brand img{
+	width: 0.8rem;
+	height: 0.48rem;
+}
+.info_way{
+	margin: 0.15rem 0;
+}
+.info_way span{
+	font-size: 0.32rem;
+	/* display: inline-block;
+	vertical-align: middle; */
+}
+.info_offer{
+	display: flex;
+	align-items: center;
+}
+
+.info_offer .icon img{
+	width: 0.32rem;
+	height: 0.32rem;
+	margin-right: 0.106rem;
+}
+.offer_decrip{
+	font-size: 0.266rem;
+	flex: 1;
+}
+.offer_more{
+	width: 1.133rem;
+	height: 0.64rem;
+	line-height: 0.64rem;
+	text-align: center;
+	background: rgba(0,0,0,0.2);
+	color: #FFFFFF;
+	font-size: 0.266rem;
+	border-radius: 0.266rem;
+	position: absolute;
+	right: 0.32rem;
+	bottom: 0.48rem;
+	padding-left: 0.213rem;
+}
+.head_bulletin .iconfont{
+	margin-right: 0.32rem;
+}
+
+
+/* 头部公告 */
+.head_bulletin{
+	height: 0.746rem;
+	/* line-height: 0.746rem; */
+	background: rgba(7,17,27,0.2);
+	display: flex;
+	align-items: center;
+}
+.bulle_icon{
+	margin-left: 0.32rem;
+}
+.bulle_icon img{
+	width: 0.586rem;
+	height: 0.32rem;
+}
+.bulle_cont{
+	font-size: 0.266rem;
+	height: 0.46rem;
+	color: #FFFFFF;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: 0 0.106rem;
+}
+.bulle_more{
+	font-size: 0.266rem;
+	margin-right: 0.32rem;
+}
+.background{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.background img{
+	width: 100%;
+	height: 100%;
+}
+/* 头部公告的详情 */
+.seller_detail{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(7,17,27,0.8);
+	z-index: 100;
+	top: 0;
+	left: 0;
+	overflow: auto;
+	transition: all 0.5s;
+}
+.fade-enter-active,.fade-leave-active{
+	transition: all 0.5s;
+	transform: translate(0,-100%,0);
+}
+.fade-enter,.fade-leave{
+	transform: translate(0,0,0);
+}
+
+.det_wrapper{
+	min-height: 100%;
+	width: 100%;
+	display: inline-block;
+}
+.det_main{
+	margin-top: 1.706rem;
+	padding-bottom: 1.706rem;
+	font-size: 0.266rem;
+	margin-left: 0.96rem;
+	margin-right: 0.96rem;
+	text-align: center;
+}
+.det_title{
+	font-size: 0.426rem;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.det_star{
+	margin-top: 0.426rem;
+	/* padding-bottom: 0.746rem; */
+}
+.offerTit{
+	display: flex;
+	align-items: center;
+	margin-top: 0.746rem;
+	padding-bottom: 0.64rem;
+}
+.offerTit span{
+	display: inline-block;
+	vertical-align: middle;
+}
+.offerTit .titleLine{
+	flex: 1;
+	height: 0.08rem;
+	background: rgba(255,255,255,0.2);
+}
+.offerTit .titleName{
+	font-size: 0.373rem;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 0 0.16rem;
+}
+.supports{
+	text-align: left;
+	margin-left: 0.32rem;
+}
+.supports-item{
+	padding-bottom: 0.32rem;
+}
+.supports-item span{
+	vertical-align: middle;
+}
+.offer_icon{
+	width: 0.426rem;
+	height: 0.426rem;
+	margin-right: 0.106rem;
+	display: inline-block;
+	
+}
+.offer_icon.decrease{
+	background: url(../img/decrease_1@2x.png);
+	background-size: 0.32rem 0.32rem;
+}
+.offer_icon.discount{
+	background: url(../img/discount_1@2x.png);
+	background-size: 0.32rem 0.32rem;
+}
+.offer_icon.special{
+	background: url(../img/special_1@2x.png);
+	background-size: 0.32rem 0.32rem;
+}
+.offer_icon.guarantee{
+	background: url(../img/guarantee_1@2x.png);
+	background-size: 0.32rem 0.32rem;
+}
+.offer_icon.invoice{
+	background: url(../img/invoice_1@2x.png);
+	background-size: 0.32rem 0.32rem;
+}
+.det_cont{
+	text-align: left;
+	margin: auto 0.32rem;
+}
+.det_close{
+	position: relative;
+	margin: -1.706rem auto 0 auto;
+	clear: both;
+	width: 0.853rem;
+	height: 0.853rem;
+}
+.iconfont.iconguanbi{
+	font-size: 0.853rem;
+}
+
+/* 商品页 */
+.goods{
+	position: absolute;
+	top: 4.64rem;
+	bottom: 1.226rem;
+	display: flex;
+	width: 100%;
+	font-size: 0;
+	overflow: hidden;
+}
+.menu-wrapper{
+	width: 2.133rem;
+	background: #f3f5f7;
+	/* overflow: hidden;
+	overflow-y: auto; */
+}
+.menu-item{
+	display: table;
+	font-size: 0.32rem;
+	width: 1.493rem;
+	height: 1.44rem;
+	line-height: 0.373rem;
+	text-align: center;
+	/* margin: 0 auto; */
+	border-bottom: 0.013rem solid #e3e4e6;
+	padding: 0 0.32rem;
+}
+.menu-item.current{
+	background: #FFFFFF;
+	z-index: 10;
+	position: relative;
+	margin-top: -0.013rem;
+	font-weight: bold;
+	border-bottom: none;
+}
+
+.menu-item .offer_icon{
+	display: inline-block;
+	vertical-align: top;
+}
+.menu-name{
+	display: table-cell;
+	vertical-align: middle;
+	width: 1.493rem;
+}
+.foods-wrapper{
+	flex: 1;
+}
+.item-name{
+	width: 100%;
+	font-size: 0.32rem;
+	color: #93999f;
+	background: #F3F5F7;
+	height: 0.693rem;
+	line-height: 0.693rem;
+	border-left: 0.053rem solid #d9dde1;
+	padding-left: 0.373rem;
+	margin: 0 auto;
+	font-weight: normal;
+}
+.food-list{
+	display: flex;
+	margin: 0 0.48rem;
+	padding: 0.48rem 0;
+	border-bottom: 0.013rem solid rgba(7,17,27,0.1);
+	position: relative;
+}
+.food-icon{
+	margin-right: 0.266rem;
+}
+.food-icon img{
+	width: 1.52rem;
+	height: 1.52rem;
+}
+.foodName{
+	font-size: 0.373rem;
+	color: #07111b;
+	margin: 0 auto;
+	margin-bottom: 0.16rem;
+}
+.foodDesc{
+	font-size: 0.266rem;
+	color: #93999f;
+}
+.foodExtra{
+	font-size: 0.266rem;
+	color: #93999f;
+	/* padding: 0.213rem 0; */
+	margin-top: 0.16rem;
+	margin-bottom: 0.16rem;
+}
+.foodExtra span{
+	padding-right: 0.32rem;
+}
+.foodPrice{
+	font-weight: bold;
+}
+.newPrice{
+	font-size: 0.373rem;
+	color: #f04b47;
+}
+.oldPrice{
+	font-size: 0.266rem;
+	color: #93999f;
+	text-decoration: line-through;
+}
+.cart-wrapper{
+	position: absolute;
+	right: 0;
+	bottom: 0.32rem;
+}
+
+
